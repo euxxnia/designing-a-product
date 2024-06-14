@@ -1,1 +1,54 @@
-# hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <!-- 반응형 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 파비콘 -->
+    <!-- <link rel="icon" href="https://glitch.com/favicon.ico" /> -->
+
+    <title>Designing a Product</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="mainImg">
+        <img src="cooperation.png" alt="cooperation" onclick="openModal(5)"
+            style="position: absolute; bottom: 34vh; right: 11vw;">
+        <img src="ai.png" alt="ai" onclick="openModal(4)" style="position: absolute; bottom: 20vh; left: 50vw;">
+
+
+        <img src="developer.png" alt="developer" onclick="openModal(2)"
+            style="position: absolute; bottom: 43vh; left: 12vw;">
+        <img src="language.png" alt="language" onclick="openModal(1)"
+            style="position: absolute; bottom: 36vh; left: 8vw;">
+        <img src="engineering.png" alt="engineering" onclick="openModal(3)"
+            style="position: absolute; bottom: 28vh; left: 15vw;">
+        <img src="server.png" alt="server" onclick="openModal(0)" style="position: absolute; bottom: 15vh; left: 5vw;">
+
+
+        <img src="product.png" alt="product" onclick="openModal(6)" style="position: absolute; top: 17vh; left: 53vw;">
+        <img src="web.png" alt="web" onclick="openModal(7)" style="position: absolute; top: 20vh; left: 28vw;">
+        <img src="user.png" alt="user" onclick="openModal(8)" style="position: absolute; top: 29vh; right: 5vw;">
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-image">
+                <img id="modalImg" src="" alt="Modal Image">
+            </div>
+            <!-- <div class="modal-text">
+                <p id="modalText">Some text</p>
+            </div> -->
+            <!-- <button onclick="nextImage()">Next</button> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
