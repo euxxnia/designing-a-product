@@ -39,3 +39,9 @@ function nextImage() {
     modalImg.src = images[currentImageIndex].src;
     modalText.textContent = images[currentImageIndex].text;
 }
+
+modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
