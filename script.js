@@ -1,4 +1,5 @@
 const modal = document.getElementById('modal');
+const modal2 = document.getElementById('modal2');
 const modalImage = document.getElementById('modal-image');
 const modalDescription = document.getElementById('modal-description');
 const additionalImages = document.getElementById('additional-images');
@@ -45,3 +46,19 @@ modal.addEventListener('click', function (event) {
         closeModal();
     }
 });
+
+modal2.addEventListener('click', function (event) {
+    if (event.target === modal2) {
+        closeAbout();
+    }
+});
+
+function openAbout() {
+    const modal = document.getElementById('modal2');
+    modal.style.display = 'flex';
+}
+
+function closeAbout() {
+    const modal = document.getElementById('modal2');
+    modal.style.display = "none";
+}

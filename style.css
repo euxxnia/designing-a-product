@@ -33,6 +33,7 @@ body {
     z-index: 1;
     left: 0;
     top: 0;
+    width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
@@ -71,4 +72,35 @@ body {
 .modal-image img {
     width: 100%;
     height: auto;
+}
+
+#content2 {
+    /* width: 80%; */
+    max-width: 80vw;
+    max-height: 80vh;
+    /* Max height to limit the modal content height */
+    /* overflow: hidden; */
+    /* Hide overflow in the content area */
+}
+
+#content2 .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#about {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* z-index: 999; */
+    background: none;
+    border: none;
+    color: white;
+    font-family: "IBM Plex Mono", "Jetbrain Mono", "Roboto Mono", monospace;
+    cursor: pointer;
+    padding: 0;
 }
